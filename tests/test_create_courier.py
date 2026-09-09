@@ -5,8 +5,8 @@ from data import Url
 class TestCourier:
 
     @allure.title('Проверка успешного создания курьера')
-    def test_courier_creation_successful(self, generate_courier_data):
-        courier_data = generate_courier_data
+    def test_courier_creation_successful(self, generate_courier_data_with_delete):
+        courier_data = generate_courier_data_with_delete
         response = requests.post(
             f'{Url.MAIN_URL}{Url.CREATE_COURIER}',
             json=courier_data

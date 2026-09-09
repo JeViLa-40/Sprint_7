@@ -4,7 +4,4 @@ class Url:
     LOGIN_COURIER = '/api/v1/courier/login'
     MAKE_ORDER = '/api/v1/orders'
     GET_ORDERS_LIST = '/api/v1/orders'
-
-class CourierAccount:
-    exist_login = "saske"
-    exist_password = "1234"
+    DELETE_COURIER = '/api/v1/courier/'
